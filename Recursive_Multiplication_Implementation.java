@@ -13,7 +13,7 @@ static int product(int x,int y){
        for(b=y;b<0;b++){
          j++;
        }
-       if(x==0|y==0){
+       if(x==0 || y==0){
 	     return 0;//Base case
        } else if((x>0&&y>0)||(x>0&&y<0)){
 	     return (y+product(x-1,y));
